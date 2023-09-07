@@ -1,4 +1,4 @@
-https://github.com/vignesh-s19/prcheck.gipipeline {
+pipeline {
     agent any    
     
     environment {
