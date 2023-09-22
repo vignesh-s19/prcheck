@@ -14,7 +14,7 @@ pipeline {
                     emailext (
                         subject: "Pipeline Started: ${currentBuild.fullDisplayName}",
                         body: "The ${currentBuild.fullDisplayName} pipeline has started on ${env.NODE_NAME}.",
-                        to: 'tamilbecse139@gmail.com,vigneshwaran.sivasubramanian@quadgen.com'
+                        to: 'vigneshwaran.sivasubramanian@quadgen.com'
                     )
                 }
             }
@@ -68,7 +68,7 @@ pipeline {
                                    "Pull Request ID: ${PULL_REQUEST_ID}\n" +
                                    "Pull Request NUM: ${PULL_REQUEST_NUM}",
                              subject: "Pull Request Details for PR#${PULL_REQUEST_ID} , PR_NUM#${PULL_REQUEST_NUM}",
-                             to: 'tamilbecse139@gmail.com,vigneshwaran.sivasubramanian@quadgen.com',
+                             to: 'vigneshwaran.sivasubramanian@quadgen.com',
                              mimeType: 'text/plain'
                 }        
               }
